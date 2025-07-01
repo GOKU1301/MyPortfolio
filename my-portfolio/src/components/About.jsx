@@ -24,21 +24,21 @@ const About = () => {
 
   const timelineItems = [
     {
-      year: '2023 - Present',
+      year: 'May 2025 – Present',
       title: 'Senior Mentor',
       company: 'SaarthiPath',
       description: 'Guiding students in Data Structures and Algorithms, conducting mock interviews, and providing career guidance.',
       icon: <FaChalkboardTeacher />
     },
     {
-      year: '2022 - 2023',
+      year: 'Oct 2024 – Dec 2024',
       title: 'Web Development Intern',
       company: 'Accretive Technologies',
       description: 'Developed full-stack web applications using React.js, Node.js, and MongoDB. Implemented responsive designs and RESTful APIs.',
       icon: <FaLaptopCode />
     },
     {
-      year: '2021 - 2025',
+      year: 'Expected: May 2026',
       title: 'B.Tech in Computer Science',
       company: 'Jaypee Institute of Information Technology',
       description: 'Focusing on web development, data structures, algorithms, and software engineering principles.',
@@ -66,7 +66,7 @@ const About = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">About Me</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-            I'm Devansh Sharma, a Computer Science student at Jaypee Institute of Information Technology (GPA: 7.6/10, expected May 2026). Passionate about web development, DSA, and mentoring, I have experience as a Senior Mentor at SaarthiPath and as a Web Development Intern at Accretive Technologies. I love building impactful products, competitive programming, and have solved 1000+ DSA problems across major platforms.
+            I'm Devansh Sharma, a Computer Science student at Jaypee Institute of Information Technology (GPA: 7.6/10, Expected: May 2026). Passionate about web development, DSA, and mentoring, I have experience as a Senior Mentor at SaarthiPath (May 2025 – Present) and as a Web Development Intern at Accretive Technologies (Oct 2024 – Dec 2024). I love building impactful products, competitive programming, and have solved 1000+ DSA problems across major platforms.
           </p>
         </motion.div>
 
@@ -151,18 +151,7 @@ const About = () => {
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <motion.a 
-            href="/assets/Devansh_Sharma_Resume.pdf" 
-            download
-            className="inline-flex items-center gap-2 px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
-            </svg>
-            Download Resume
-          </motion.a>
+          
         </motion.div>
       </div>
     </section>

@@ -119,13 +119,42 @@ const Home = () => {
           className="flex gap-6 justify-center mb-8"
           variants={itemVariants}
         >
+          {/* Coding Profiles */}
           <motion.a 
-            href="mailto:debu1301@gmail.com" 
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl"
+            href="https://leetcode.com/u/Gokuuu/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-yellow-500 dark:hover:text-yellow-400 text-2xl"
             whileHover={{ scale: 1.2, y: -5 }}
             whileTap={{ scale: 0.9 }}
+            title="LeetCode"
           >
-            <FaEnvelope />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/LeetCode_logo_black.png" alt="LeetCode" className="w-7 h-7 bg-white rounded-full p-1" style={{ display: 'inline' }} />
+          </motion.a>
+          <motion.a 
+            href="https://codeforces.com/profile/goku1301" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-blue-700 dark:hover:text-blue-400 text-2xl"
+            whileHover={{ scale: 1.2, y: -5 }}
+            whileTap={{ scale: 0.9 }}
+            title="Codeforces"
+          >
+            {/* Codeforces icon */}
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-7 h-7">
+              <path fill="currentColor" d="M4.5 7.5C5.328 7.5 6 8.172 6 9v10.5c0 .828-.672 1.5-1.5 1.5h-3C.672 21 0 20.328 0 19.5V9c0-.828.672-1.5 1.5-1.5h3zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5h3zm7.5 0c.828 0 1.5.672 1.5 1.5v10.5c0 .828-.672 1.5-1.5 1.5h-3c-.828 0-1.5-.672-1.5-1.5V9c0-.828.672-1.5 1.5-1.5h3z"/>
+            </svg>
+          </motion.a>
+          <motion.a 
+            href="https://www.geeksforgeeks.org/user/debu1dwji/" 
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-gray-700 dark:text-gray-300 hover:text-green-600 dark:hover:text-green-400 text-2xl"
+            whileHover={{ scale: 1.2, y: -5 }}
+            whileTap={{ scale: 0.9 }}
+            title="GeeksforGeeks"
+          >
+            <img src="https://upload.wikimedia.org/wikipedia/commons/4/43/GeeksforGeeks.svg" alt="GeeksforGeeks" className="w-7 h-7 bg-white rounded-full p-1" style={{ display: 'inline' }} />
           </motion.a>
           <motion.a 
             href="https://www.linkedin.com/in/sharmadevansh1301/" 
@@ -147,15 +176,7 @@ const Home = () => {
           >
             <FaGithub />
           </motion.a>
-          <motion.a 
-            href={`${import.meta.env.BASE_URL}assets/Devansh_Sharma_Resume.pdf`} 
-            download 
-            className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl"
-            whileHover={{ scale: 1.2, y: -5 }}
-            whileTap={{ scale: 0.9 }}
-          >
-            <FaFileDownload />
-          </motion.a>
+
         </motion.div>
         
         <motion.div variants={itemVariants} className="flex flex-col sm:flex-row gap-4">

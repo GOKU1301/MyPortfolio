@@ -193,20 +193,18 @@ const Experience = () => {
           transition={{ delay: 0.5 }}
           viewport={{ once: true }}
         >
-          <p className="text-gray-600 dark:text-gray-400">
-            Interested in my qualifications? Check out my full resume for more details.
-          </p>
-          <motion.a 
-            href="/assets/Devansh_Sharma_Resume.pdf" 
-            download
-            className="inline-flex items-center gap-2 mt-4 px-6 py-3 bg-gray-800 hover:bg-gray-900 dark:bg-gray-700 dark:hover:bg-gray-600 text-white rounded-lg font-medium transition-colors"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
+          <motion.a
+            href="https://goku1301.github.io/MyPortfolio/assets/Devansh_Sharma_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white rounded-full font-bold text-lg shadow-2xl ring-4 ring-blue-300 dark:ring-blue-800 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-400 animate-pulse"
+            whileHover={{ scale: 1.08, rotate: 1 }}
+            whileTap={{ scale: 0.97 }}
           >
-            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5 5-5M12 4v12" />
             </svg>
-            Download Full Resume
+            View Resume
           </motion.a>
         </motion.div>
       </div>
