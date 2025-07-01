@@ -1,0 +1,22 @@
+# Node modules
+node_modules/
+my-portfolio/gh-pages-deploy.md
+# Build output
+/dist
+/build
+
+# Local env files
+.env
+.env.*
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# VSCode
+.vscode/
