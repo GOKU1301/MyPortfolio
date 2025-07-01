@@ -86,9 +86,10 @@ const Home = () => {
           whileHover={{ scale: 1.05 }}
         >
           <img 
-            src="/assets/profile.jpg" 
+            src={`${import.meta.env.BASE_URL}assets/profile.jpg`} 
             alt="Devansh Sharma" 
             className="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-blue-400 object-cover" 
+            onError={(e) => { e.target.onerror = null; e.target.src = 'https://ui-avatars.com/api/?name=Devansh+Sharma&background=0D8ABC&color=fff'; }}
           />
           <motion.div 
             className="absolute -bottom-2 -right-2 bg-blue-600 text-white rounded-full p-2"
@@ -147,7 +148,7 @@ const Home = () => {
             <FaGithub />
           </motion.a>
           <motion.a 
-            href="/assets/Devansh_Sharma_Resume.pdf" 
+            href={`${import.meta.env.BASE_URL}assets/Devansh_Sharma_Resume.pdf`} 
             download 
             className="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 text-2xl"
             whileHover={{ scale: 1.2, y: -5 }}

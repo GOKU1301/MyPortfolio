@@ -9,7 +9,7 @@ const experiences = [
     period: 'May 2025 – Present',
     location: 'Noida, India',
     type: 'Part-time',
-    logo: '/assets/saarthipath-logo.png', 
+    logo: `${import.meta.env.BASE_URL}assets/SaarthiPath.png`, 
     companyUrl: 'https://saarthipath.com',
     certificateUrl: 'https://drive.google.com/file/d/1wa3gZ-ea1Atx7wuzvLbsJT4xP1a1WAgn/view?usp=sharing',
     responsibilities: [
@@ -25,7 +25,7 @@ const experiences = [
     period: 'Oct 2024 – Dec 2024',
     location: 'Remote',
     type: 'Internship',
-    logo: '/assets/accretive-logo.png', 
+    logo: `${import.meta.env.BASE_URL}assets/AccretiveTechnologies.png`, 
     companyUrl: 'https://accretivetech.com',
     certificateUrl: 'https://drive.google.com/file/d/1iwxlmjkHzXEbhZBCqCgTcUS6s2WaoIa1/view?usp=sharing',
     responsibilities: [
