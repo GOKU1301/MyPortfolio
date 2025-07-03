@@ -25,15 +25,27 @@ const Skills = () => {
       ]
     },
     {
-      category: 'webdev',
-      title: 'Web Development',
+      category: 'frontend',
+      title: 'Frontend',
       items: [
-        { name: 'React.js', level: 85, color: 'from-blue-500 to-blue-400' },
+        { name: 'React.js', level: 70, color: 'from-blue-500 to-blue-400' },
+        { name: 'Next.js', level: 70, color: 'from-blue-500 to-blue-400' },
+        { name: 'HTML5', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'CSS3', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'Tailwind CSS', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'Javascript', level: 80, color: 'from-blue-500 to-blue-400' },
+      ]
+    },
+    {
+      category: 'backend',
+      title: 'Backend',
+      items: [
         { name: 'Node.js', level: 90, color: 'from-blue-500 to-blue-400' },
         { name: 'Express.js', level: 85, color: 'from-blue-500 to-blue-400' },
-        { name: 'MySQL', level: 75, color: 'from-blue-500 to-blue-400' },
-        { name: 'PostgreSQL', level: 65, color: 'from-blue-500 to-blue-400' },
-        { name: 'MongoDB', level: 80, color: 'from-blue-500 to-blue-400' }
+        { name: 'MySQL', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'PostgreSQL', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'MongoDB', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'Typescript', level: 80, color: 'from-blue-500 to-blue-400' },
       ]
     },
     {
@@ -47,6 +59,7 @@ const Skills = () => {
     }
   ];
 
+  // Make sure we always show all skill categories when 'all' is selected
   const filteredSkills = activeTab === 'all' 
     ? skills 
     : skills.filter(skill => skill.category === activeTab);
@@ -127,11 +140,12 @@ const Skills = () => {
         </div>
 
         <motion.div 
+          key={activeTab} /* Add key based on activeTab to force re-render */
           className="grid grid-cols-1 lg:grid-cols-2 gap-8"
           variants={container}
           initial="hidden"
           whileInView="visible"
-          viewport={{ once: true }}
+          viewport={{ once: false }} /* Allow re-animation when items re-enter viewport */
         >
           {filteredSkills.map((skillGroup, idx) => (
             <motion.div 
@@ -183,7 +197,7 @@ const Skills = () => {
           viewport={{ once: true }}
         >
           <p className="text-gray-600 dark:text-gray-400">
-            I'm constantly learning and adding new skills to my repertoire.
+            I'm constantly learning and adding new skills to my skillset.
           </p>
           
         </motion.div>

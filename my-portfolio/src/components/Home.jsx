@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
-import { FaLinkedin, FaGithub, FaEnvelope, FaFileDownload } from 'react-icons/fa';
+import { FaLinkedin, FaGithub, FaEnvelope, FaFileDownload, FaInstagram } from 'react-icons/fa';
 
 // Animated background particles
 const ParticleBackground = () => {
@@ -86,9 +86,9 @@ const Home = () => {
           whileHover={{ scale: 1.05 }}
         >
           <img 
-            src={`${import.meta.env.BASE_URL}assets/profile.jpg`} 
+            src={`${import.meta.env.BASE_URL}assets/devansh.jpeg`} 
             alt="Devansh Sharma" 
-            className="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-blue-400 object-cover" 
+            className="w-40 h-40 rounded-full shadow-lg mb-6 border-4 border-blue-400 object-contain bg-white" 
             onError={(e) => { e.target.onerror = null; e.target.src = 'https://ui-avatars.com/api/?name=Devansh+Sharma&background=0D8ABC&color=fff'; }}
           />
           <motion.div 
@@ -112,7 +112,7 @@ const Home = () => {
           className="text-xl mb-6 text-gray-700 dark:text-gray-300"
           variants={itemVariants}
         >
-          Aspiring Software Engineer | MERN Stack | DSA Mentor
+          Aspiring Software Engineer | MERN | DSA 
         </motion.p>
         
         <motion.div 
@@ -165,6 +165,18 @@ const Home = () => {
             whileTap={{ scale: 0.9 }}
           >
             <FaLinkedin />
+          </motion.a>
+          {/* Instagram icon - second last from right */}
+          <motion.a 
+            href="https://www.instagram.com/i_am_goku1304/" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="text-gray-700 dark:text-gray-300 hover:text-pink-500 dark:hover:text-pink-400 text-2xl"
+            whileHover={{ scale: 1.2, y: -5 }}
+            whileTap={{ scale: 0.9 }}
+            title="Instagram"
+          >
+            <FaInstagram />
           </motion.a>
           <motion.a 
             href="https://github.com/GOKU1301" 
