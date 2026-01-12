@@ -112,7 +112,7 @@ const Home = () => {
           className="text-xl mb-6 text-gray-700 dark:text-gray-300"
           variants={itemVariants}
         >
-          Aspiring Software Engineer | MERN | DSA 
+         Backend Developer | Spring Boot • Node.js • REST APIs | MERN | DSA 
         </motion.p>
         
         <motion.div 

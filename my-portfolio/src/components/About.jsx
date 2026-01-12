@@ -23,28 +23,35 @@ const About = () => {
   };
 
   const timelineItems = [
-  {
-    year: 'Expected: May 2026',
-    title: 'B.Tech in Computer Science',
-    company: 'Jaypee Institute of Information Technology',
-    description: '',
-    icon: <FaGraduationCap />
-  },
-  {
-    year: 'May 2025 – Present',
-    title: 'Senior Mentor',
-    company: 'SaarthiPath',
-    description: 'Mentoring college freshers by guiding them through their learning journey, helping them build strong foundations in Data Structures & Algorithms (DSA) and assisting with common challenges in the MERN stack.',
-    icon: <FaChalkboardTeacher />
-  },
-  {
-    year: 'Oct 2024 – Dec 2024',
-    title: 'Web Development Intern',
-    company: 'Accretive Technologies',
-    description: 'Contributed to building an internal intern management tool with modules for task tracking, profile management, and feedback. Developed backend APIs using Express.js and MongoDB in a collaborative Git workflow.',
-    icon: <FaLaptopCode />
-  }
-];
+    {
+      year: 'Expected: May 2026',
+      title: 'B.Tech in Computer Science',
+      company: 'Jaypee Institute of Information Technology',
+      description: '',
+      icon: <FaGraduationCap />
+    },
+    {
+      year: 'June 2025 – Aug 2025',
+      title: 'Backend Development Intern',
+      company: 'Sopra Steria India Limited',
+      description: 'Developed 16+ REST endpoints using Spring Boot with JWT authentication and role-based access. Built scalable backend modules with MySQL and implemented clean architecture patterns (controller-service-repository) for maintainability.',
+      icon: <FaLaptopCode />
+    },
+    {
+      year: 'May 2025 – Present',
+      title: 'Senior Mentor',
+      company: 'SaarthiPath',
+      description: 'Mentoring college freshers by guiding them through their learning journey, helping them build strong foundations in Data Structures & Algorithms (DSA) and assisting with common challenges in the MERN stack.',
+      icon: <FaChalkboardTeacher />
+    },
+    {
+      year: 'Oct 2024 – Dec 2024',
+      title: 'Web Development Intern',
+      company: 'Accretive Technologies',
+      description: 'Contributed to building an internal intern management tool with modules for task tracking, profile management, and feedback. Developed backend APIs using Express.js and MongoDB in a collaborative Git workflow.',
+      icon: <FaLaptopCode />
+    }
+  ];
 
   const skills = [
     { category: 'Frontend', items: ['React.js', 'Next.js', 'HTML5', 'CSS3', 'JavaScript', 'Tailwind CSS'] },
@@ -66,8 +73,17 @@ const About = () => {
             <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400">About Me</span>
           </h2>
           <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
-  Hey! I am Devansh, Currently in my final year pursuing B.Tech from Jaypee Institute of Information Technology. I love solving real-world problems by building impactful projects. Currently in the process of learning GenAI and how I can mix it with the MERN stack to build cool stuff!! Parallely, I am a senior mentor at SaarthiPath where I try to guide college freshers in their journey and solve their DSA and MERN stack queries.  Feel free to explore my portfolio :)
-</p>
+            Hey! I am Devansh, currently in my final year pursuing B.Tech from Jaypee Institute of Information Technology. I love solving real-world problems by building impactful projects—especially with GenAI and Spring Boot. Lately,I’ve been enjoying exploring MCP servers and experimenting with new backend architectures. I’m passionate about mixing Generative AI with scalable backend stacks to create innovative solutions. I’m also a senior mentor at SaarthiPath, guiding college freshers in their journey and solving their DSA and MERN stack queries. Feel free to explore my portfolio!
+            <br />
+            {/* <a 
+              href="/assets/22104004DevanshSharmaResume (1).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 dark:text-blue-400 underline"
+            >
+              View My Resume
+            </a> */}
+          </p>
         </motion.div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
@@ -84,18 +100,20 @@ const About = () => {
                 <FaCode className="mr-2 text-blue-500" /> My Journey
               </h3>
               <motion.p className="mb-4 text-gray-600 dark:text-gray-300">
-              My academic path began at St. Peter’s College, Agra, where I completed my schooling with 97.5% in the ISC Science stream.</motion.p>
-<motion.p className="mb-4 text-gray-600 dark:text-gray-300">
-Along the way, I discovered a passion for building impactful projects and working with MERN stack to build scalable applications. During my internship at Accretive Technologies, I gained hands-on experience in developing internal RESTful APIs and backend logic with Node.js, Express, and MongoDB.
-</motion.p>
-<motion.p className="mb-4 text-gray-600 dark:text-gray-300">
-Alongside that, I’ve solved over 1000+ DSA problems, constantly refining my problem-solving skills. As a Senior Mentor at SaarthiPath, I now help college freshers do the same — guiding them through programming fundamentals, DSA, and full-stack development.</motion.p>
-<motion.p className="mb-4 text-gray-600 dark:text-gray-300">
-Today, I’m exploring the world of Generative AI, combining it with full-stack development to create solutions that are not just functional, but intelligent.
-</motion.p>
-<motion.p className="text-gray-600 dark:text-gray-300">
-When I’m not coding, I’m either trying to beat my personal record at the gym, pretending to be Messi, ABD,and LeBron all in one weekend,  getting lost in Elden Ring (yes, the video game), or riding my bike or doing anything that keeps the adrenaline flowing.
-</motion.p>
+                My academic path began at St. Peter’s College, Agra, where I completed my schooling with 97.5% in the ISC Science stream.
+              </motion.p>
+              <motion.p className="mb-4 text-gray-600 dark:text-gray-300">
+                I’m passionate about building impactful projects and exploring new technologies. My recent internship at Sopra Steria India Limited gave me hands-on experience in backend development using Spring Boot, JWT authentication, and MySQL, while deepening my understanding of OOP principles and clean architecture. I’m currently enjoying exploring MCP servers and integrating GenAI into my projects to create innovative solutions.
+              </motion.p>
+              <motion.p className="mb-4 text-gray-600 dark:text-gray-300">
+                Alongside that, I’ve solved over 1500+ DSA problems, constantly refining my problem-solving skills. As a Senior Mentor at SaarthiPath, I help college freshers strengthen their programming fundamentals, DSA, and full-stack development.
+              </motion.p>
+              <motion.p className="mb-4 text-gray-600 dark:text-gray-300">
+                Today, I’m focused on combining Generative AI with full-stack and backend development (Spring Boot, Node.js) to build solutions that are not just functional, but intelligent and scalable.
+              </motion.p>
+              <motion.p className="text-gray-600 dark:text-gray-300">
+                When I’m not coding, I’m either trying to beat my personal record at the gym, pretending to be Messi, ABD, and LeBron all in one weekend, getting lost in Elden Ring, riding my bike, or exploring new server architectures and backend frameworks.
+              </motion.p>
             </motion.div>
             
             <motion.div variants={fadeIn} className="mt-8">

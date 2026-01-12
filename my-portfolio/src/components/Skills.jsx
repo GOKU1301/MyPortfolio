@@ -21,7 +21,7 @@ const Skills = () => {
         { name: 'C/C++', level: 95, color: 'from-blue-500 to-blue-400' },
         { name: 'JavaScript', level: 90, color: 'from-blue-500 to-blue-400' },
         { name: 'Python (Basic)', level: 60, color: 'from-blue-500 to-blue-400' },
-        { name: 'Java (Basic)', level: 60, color: 'from-blue-500 to-blue-400' }
+        { name: 'Java', level: 80, color: 'from-blue-500 to-blue-400' } // updated level
       ]
     },
     {
@@ -42,9 +42,16 @@ const Skills = () => {
       items: [
         { name: 'Node.js', level: 90, color: 'from-blue-500 to-blue-400' },
         { name: 'Express.js', level: 85, color: 'from-blue-500 to-blue-400' },
+        { name: 'Spring Boot', level: 80, color: 'from-blue-500 to-blue-400' }, // new skill
+        { name: 'JWT Authentication', level: 75, color: 'from-blue-500 to-blue-400' }, // new skill
         { name: 'MySQL', level: 80, color: 'from-blue-500 to-blue-400' },
         { name: 'PostgreSQL', level: 80, color: 'from-blue-500 to-blue-400' },
         { name: 'MongoDB', level: 80, color: 'from-blue-500 to-blue-400' },
+        { name: 'OOP Principles', level: 80, color: 'from-blue-500 to-blue-400' }, // new skill
+        { name: 'REST APIs', level: 85, color: 'from-blue-500 to-blue-400' }, // new skill
+        { name: 'Repository Pattern', level: 70, color: 'from-blue-500 to-blue-400' }, // new skill
+        { name: 'Service Layer Architecture', level: 70, color: 'from-blue-500 to-blue-400' }, // new skill
+        { name: 'DTO Pattern', level: 70, color: 'from-blue-500 to-blue-400' }, // new skill
         { name: 'Typescript', level: 80, color: 'from-blue-500 to-blue-400' },
       ]
     },

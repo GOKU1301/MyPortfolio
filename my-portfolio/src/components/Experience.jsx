@@ -4,6 +4,22 @@ import { FaBriefcase, FaBuilding, FaCalendarAlt, FaChevronDown, FaChevronUp } fr
 
 const experiences = [
   {
+    role: 'Backend Development Intern',
+    company: 'Sopra Steria India Limited',
+    period: 'June 2025 – Aug 2025',
+    location: 'Noida, India',
+    type: 'Internship',
+    logo: `${import.meta.env.BASE_URL}assets/SopraSteria.png`, 
+    companyUrl: 'https://www.soprasteria.com',
+    certificateUrl: 'https://drive.google.com/file/d/1WI04Mk540d3bDFpJPJ9z6rHH6vdwrkSG/view?usp=sharing', 
+    responsibilities: [
+      'Engineered 16 REST endpoints in Spring Boot: implemented JWT auth and role-based access.',
+      'Built backend for users, jobs, and applications with MySQL (3 core tables) and input validation/DTOs.',
+      'Structured controller-service-repository layers across 5+ modules for maintainability and clean architecture.'
+    ],
+    skills: ['Spring Boot', 'JWT', 'MySQL', 'REST APIs', 'Integration', 'Abstraction', 'Encapsulation', 'Polymorphism']
+  },
+  {
     role: 'Senior Mentor',
     company: 'SaarthiPath',
     period: 'May 2025 – Present',
@@ -194,7 +210,8 @@ const Experience = () => {
           viewport={{ once: true }}
         >
           <motion.a
-            href="https://goku1301.github.io/MyPortfolio/assets/Devansh_Sharma_Resume.pdf"
+            href="/MyPortfolio/assets/22104004DevanshSharmaResume (1).pdf"
+            download
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-3 px-8 py-4 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500 hover:from-blue-600 hover:via-purple-600 hover:to-pink-600 text-white rounded-full font-bold text-lg shadow-2xl ring-4 ring-blue-300 dark:ring-blue-800 transition-all duration-300 focus:outline-none focus:ring-4 focus:ring-pink-400 animate-pulse"
